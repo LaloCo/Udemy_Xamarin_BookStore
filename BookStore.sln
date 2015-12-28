@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore", "BookStore\BookStore.csproj", "{F9701F72-0A34-44BE-AE90-427B5F9A7B5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Android", "BookStore.Android\BookStore.Android.csproj", "{3D1BA91F-3434-42CF-A34D-D5BD621EC70A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D1BA91F-3434-42CF-A34D-D5BD621EC70A}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{3D1BA91F-3434-42CF-A34D-D5BD621EC70A}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{3D1BA91F-3434-42CF-A34D-D5BD621EC70A}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{3D1BA91F-3434-42CF-A34D-D5BD621EC70A}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{3D1BA91F-3434-42CF-A34D-D5BD621EC70A}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{3D1BA91F-3434-42CF-A34D-D5BD621EC70A}.Release|iPhone.Build.0 = Release|Any CPU
+		{3D1BA91F-3434-42CF-A34D-D5BD621EC70A}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{3D1BA91F-3434-42CF-A34D-D5BD621EC70A}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{F9701F72-0A34-44BE-AE90-427B5F9A7B5B}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{F9701F72-0A34-44BE-AE90-427B5F9A7B5B}.Debug|iPhone.Build.0 = Debug|iPhone
+		{F9701F72-0A34-44BE-AE90-427B5F9A7B5B}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{F9701F72-0A34-44BE-AE90-427B5F9A7B5B}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{F9701F72-0A34-44BE-AE90-427B5F9A7B5B}.Release|iPhone.ActiveCfg = Release|iPhone
+		{F9701F72-0A34-44BE-AE90-427B5F9A7B5B}.Release|iPhone.Build.0 = Release|iPhone
+		{F9701F72-0A34-44BE-AE90-427B5F9A7B5B}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{F9701F72-0A34-44BE-AE90-427B5F9A7B5B}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="96">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="3">
+            <objects>
+                <tableViewController id="4" sceneMemberID="viewController" customClass="BooksTableViewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="8" rowHeight="79" reuseIdentifier="Book" customClass="BookTableViewCell">
+                                <rect key="frame" x="0.0" y="22" width="414" height="79"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8" id="9">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="78.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name" lineBreakMode="tailTruncation" minimumFontSize="10" id="34" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                            <rect key="frame" x="20" y="20" width="263" height="21"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Author" lineBreakMode="tailTruncation" minimumFontSize="10" id="35" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                            <rect key="frame" x="20" y="38" width="129" height="21"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Publisher" lineBreakMode="tailTruncation" minimumFontSize="10" id="36" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                            <rect key="frame" x="170" y="38" width="224" height="21"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Year" lineBreakMode="tailTruncation" minimumFontSize="10" id="37" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" textAlignment="right">
+                                            <rect key="frame" x="323" y="20" width="71" height="21"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" colorSpace="calibratedRGB" red="0.93725490196078431" green="0.27843137254901962" blue="0" alpha="1"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="bookNameLabel" destination="34" id="name-outlet-34"/>
+                                    <outlet property="bookAuthorLabel" destination="35" id="name-outlet-35"/>
+                                    <outlet property="bookPublisherLabel" destination="36" id="name-outlet-36"/>
+                                    <outlet property="bookYearLabel" destination="37" id="name-outlet-37"/>
+                                    <segue id="76" destination="44" kind="show" identifier="DetailsSegue"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="4" id="6"/>
+                            <outlet property="delegate" destination="4" id="7"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem title="Books" id="146" key="navigationItem"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="248" y="14"/>
+        </scene>
+        <scene sceneID="43">
+            <objects>
+                <viewController id="44" sceneMemberID="viewController" customClass="DetailsViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="41"/>
+                        <viewControllerLayoutGuide type="bottom" id="42"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="45">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="85" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="20" y="79" width="374" height="578"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="86" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="20" y="1244" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Book Name" lineBreakMode="tailTruncation" minimumFontSize="10" id="87" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="20" y="665" width="374" height="27"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="bookNameLabel" destination="87" id="name-outlet-87"/>
+                        <outlet property="bookImageView" destination="85" id="name-outlet-85"/>
+                    </connections>
+                    <navigationItem id="92" translatesAutoresizingMaskIntoConstraints="NO" key="navigationItem"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="46" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="728" y="13"/>
+        </scene>
+        <scene sceneID="95">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="96" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="99">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <rect key="frame" x="0.0" y="20" width="508" height="44"/>
+                    </navigationBar>
+                    <connections>
+                        <segue id="147" destination="4" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="100" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-219" y="12"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina55"/>
+    </simulatedMetricsContainer>
+    <resources>
+        <image name="Images/HP1.jpeg" width="475" height="700"/>
+        <image name="Images/HP2.jpg" width="500" height="711"/>
+        <image name="Images/HP3.jpg" width="576" height="821"/>
+    </resources>
+</document>
